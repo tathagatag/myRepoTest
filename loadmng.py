@@ -15,8 +15,7 @@ path_1 = "C:\iofile\input\mobile.csv"
 df_1 = pd.read_csv(path_1, sep = "," , names = ["WarehouseNum" ,"GLCategory" , "Aging" , "Carrier" , "InventoryType", "Quantity" , "Price" , "Brand"] )
 
 dt = datetime.datetime.now().date().strftime('%Y%m%d')
-print ("Run Date=")
-print (dt)
+print ("Run Date=" + dt)
 df_1['LoadDate'] = dt
 
 
@@ -27,3 +26,8 @@ result=mycol.insert_many(data_json)
 
 print ('****** Data Load Completed *******')
 
+#def countrec():
+ #    c=mycol.estimated_document_count()
+  #   return c
+     
+#countrec()
