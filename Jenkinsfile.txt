@@ -4,7 +4,7 @@ pipeline {
          stages {
                  stage('One') {
                  steps {
-                     echo 'Hi, this is Zulaikha from edureka'
+                     echo 'Hi, Here we go'
                  }
                  }
                  stage('Two') {
@@ -19,7 +19,7 @@ pipeline {
                        }
                  }
                  steps {
-                       echo "Hello"
+                       echo "Hello ! Start Testing"
                  }
                  }
                  stage('Four') {
@@ -30,12 +30,6 @@ pipeline {
                            }
                            }
                             stage('Integration test') {
-                              agent {
-                                    docker {
-                                            reuseNode true
-                                            image 'ubuntu'
-                                           }
-                                    }
                               steps {
                                 echo "Running the integration test..."
                               }
