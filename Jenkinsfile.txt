@@ -27,6 +27,7 @@ pipeline {
                             stage('Unit Test') {
                            steps {
                                 echo "Running the unit test..."
+				sh 'python --version'	
                            }
                            }
                             stage('Integration test') {
