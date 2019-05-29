@@ -19,7 +19,8 @@ pipeline {
                        }
                  }
                  steps {
-                       echo "Hello ! Start Testing"
+                       echo "Hello ! Job Started"
+			C:\Users\tathagata_2\AppData\Local\Programs\Python\Python37-32\python.exe C:\Users\tathagata_2\AppData\Local\Programs\Python\Python37-32\Scripts\demopython.py
                  }
                  }
                  stage('Four') {
@@ -27,7 +28,7 @@ pipeline {
                             stage('Unit Test') {
                            steps {
                                 echo "Running the unit test..."
-				sh 'python --version'	
+				
                            }
                            }
                             stage('Integration test') {
