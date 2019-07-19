@@ -6,6 +6,7 @@
 #        assert result == 18476
 
 def test_countrec():
+        print("Hello TG")
         result = 18476
         assert result == 18476
 
