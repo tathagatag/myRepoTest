@@ -1,5 +1,5 @@
-import utcmng1
-import pytest
+#import utcmng1
+#import pytest
 
 #def test_countrec():
 #        result = utcmng1.countrec()
